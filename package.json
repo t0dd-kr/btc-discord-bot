@@ -1,0 +1,25 @@
+{
+  "name": "btc-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "btc-discord-bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0dd-kr/btc-discord-bot.git"
+  },
+  "author": "t0dd-chanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t0dd-kr/btc-discord-bot/issues"
+  },
+  "homepage": "https://github.com/t0dd-kr/btc-discord-bot#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "discord.io": "^2.5.3",
+    "express": "^4.16.2",
+    "winston": "^2.4.0"
+  }
+}
