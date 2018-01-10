@@ -26,22 +26,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
         args = args.splice(1);
         switch(cmd) {
-            // !ping
-            case 'ping':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'  });
-
-		        case 'help'
-                 bot.sendMessage({
-                   to: channelID,
-    	              message : 
-    	'------------사용법------------------------\n'
-   	가격 뒤에 암호화폐의 기호를 입력하시면 원하시는 암호화폐의 가격을 볼 수 있습니다.
-   	BTC(비트코인), ETH(이더리움), STRAT(스트라티스), OMG(오미세고),
-   	DASH(대쉬), LTC(라이트코인), EOS(이오스) \n
-   	(ex: !가격 BTC 라고 입력하시면 비트코인의 시세를 볼 수 있습니다.)
-
+	        case 'help':
+             bot.sendMessage({
+               to: channelID,
+	              message :
+   	    "!가격 : 암호화폐의 기호를 입력하시면 원하시는 암호화폐의 가격을 볼 수 있습니다.\n\n"+
+   	    "btc(비트코인), eth(이더리움), strat(스트라티스), omg(오미세고), dash(대쉬), ltc(라이트코인), eos(이오스) \n\n"+
+   	    "(ex: !가격 btc)\n\n"
 
               });
 
