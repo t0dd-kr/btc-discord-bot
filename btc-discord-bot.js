@@ -30,8 +30,21 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'ping':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Pong!'
-                });
+                    message: 'Pong!'  });
+
+		case 'help'
+ bot.sendMessage({
+ to: channelID,
+ message :
+ '------------������------------------------\n'
+���� �ڿ� ��ȣȭ���� ��ȣ�� �Է��Ͻø� ���Ͻô� ��ȣȭ���� ������ �� �� �ֽ��ϴ�.
+BTC(��Ʈ����), ETH(�̴�����),
+STRAT(��Ʈ��Ƽ��), OMG(���̼���),
+DASH(�뽬), LTC(����Ʈ����), EOS(�̿���) \n
+(ex: !���� BTC ���� �Է��Ͻø� ��Ʈ������ �ü��� �� �� �ֽ��ϴ�.)
+
+});
+
             break;
             // Just add any case commands if you want to..
          }
